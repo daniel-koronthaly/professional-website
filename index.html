@@ -1,1 +1,197 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<head>
+    <title>Daniel Koronthály</title>
+</head>
+<nav>
+    <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<body>
+
+    <div id="top">
+        <h1 id="#top">About Me</h1>
+        <div class="content">
+            <p>My name is Daniel Koronthály, and I'm currently studying for my Master of Science in Computer Science at
+                <a class="body-link" href="https://cs.wwu.edu/" target="null">Western Washington
+                    University</a>.
+            </p>
+            <p>My research interest is Human-Computer Interaction (HCI) and I have a solid academical mathematical
+                background.</p>
+            <p>I hope to go for a PhD after graduating.</p>
+            <div class="pic" style="margin-left: 15px;">
+                <img src="Daniel pic.jpg" alt="Picture of me" style="width: 28%;  height: 28%;">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="resume">
+        <h1 id="#resume">Resume</h1>
+        <div class="content">
+            <p>
+                Resume: <a class="body-link" href="Daniel Koronthaly Resume 2023.pdf" target="null">Resume
+                    (Download)</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="projects">
+        <h1>Current Projects/Research</h1>
+        <h2 id="research">NEAT (Next-Generation Effective Affective Technology) Research Lab</h2>
+        <div class="content">
+            <p>
+                This research lab is headed by <a class="body-link" href="https://facultyweb.cs.wwu.edu/~ahmeds/"
+                    target="null">Dr. Shameem Ahmed</a> and <a class="body-link"
+                    href="https://facultyweb.cs.wwu.edu/~sharmim/" target="null">Dr. Moushumi Sharmin</a>
+            </p>
+
+            <p>
+                The research lab focuses on designing technology to improve the life experience of autistic individuals.
+                This technology addresses economic and socially-critical problems, such as creating accessible
+                employment opportunities for autistic college students and real-time detection of stress and anxiety in
+                autistic young adults to improve their mental health conditions.
+            </p>
+
+            <p>
+                My contributions, among others, include:
+            <h3 id="eXpress">eXpress</h3>
+            <div class="contentNested">
+                <p>
+                    A significant proportion of
+                    autistic individuals are
+                    considered 'non-verbal or minimally verbal' and have
+                    difficulty expressing their emotions. Commercial
+                    alternative and assistive communication (AAC)
+                    applications are not only scarce, but also often ineffective
+                    in aiding autistic individuals in expressing emotions due
+                    to a minimal understanding of their unique needs and
+                    preferences.
+                </p>
+                <p>
+                    Therefore, as part of my undergraduate research, I helped develop eXpress, a mobile application that
+                    helps autistic individuals communicate their emotions through customizable symbolic representations
+                    of
+                    emotions via emoticons, musical notes, auditory feedback, and color.
+                </p>
+                <p>
+                    This resulted in a poster publication at UbiComp 2022:
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3544793.3560338" target="null" class="body-link">eXpress
+                        Poster</a>
+                </p>
+            </div>
+            <p>Work-in-progress screenshots:</p>
+            <div class="pic" style="margin-left: 15px;margin-bottom: 20px;">
+                <img src="eXpress Selection.png" alt="Picture of feelings selection screen" style="width: 28%;  height: 28%;">
+                <img src="eXpress Emoji.png" alt="Picture of emoji selection screen" style="width: 28%;  height: 28%;">
+            </div>
+            <h3 id="smartwatch">Smartwatch Data Collection</h3>
+            <div class="contentNested">
+                <p>
+                    One of the research projects featured biological data collection (including GPS and Heart rate
+                    variability) using smartwatches.
+                    For some time, data collection was interrupted, and I was assigned to the project to discover the
+                    reason for the interruption.
+                </p>
+                <p>
+                    The cause turned out to be the serverless solution that the smartwatch sent data to through an
+                    HTTP request, which then formatted the data and sent it to the database. The free tier that was
+                    hosting our apps was sunset (discontinued) and all the apps were deleted.
+                </p>
+                <p>
+                    My contribution was using my then-recently-acquired Azure Fundamentals certification to recreate the
+                    entire deleted codebase using Azure Function Apps, updating the HTTP endpoints, and then testing to
+                    ensure that the format in the database was still consistent.
+                </p>
+            </div>
+            </p>
+            
+            <p>
+                A few proper publications are on the horizon.
+            </p>
+
+        </div>
+
+        <h2 id="panicpal">Panic Pal</h2>
+
+        <div class="content">
+            <p>
+                Panic Pal is a React Native application with ChatGPT integration I'm working on for my CSCI 536:
+                Technology for Social Good
+                class.
+
+                Panic attacks are sudden psychological episodes that have frightening symptoms such as shortness of
+                breath, palpitations, or a feeling of doom or loss of control. These intense episodes of fear and
+                anxiety can lead to social isolation, impaired relationships,
+                and reduced quality of life.
+            </p>
+            <p>
+                Breathing/grounding techniques and interventions help to alleviate these issues. These techniques can be
+                hard to carry out
+                by yourself. Our app aims to provide ease in
+                managing panic attacks in the moment to empower individuals to better cope with and reduce the impact
+                panic attacks can have on their life.
+            </p>
+            <p>
+                My contributions, among others, include:
+            <ul style="margin-left: 35px;">
+                <li>Firebase Database integration</li>
+                <li>User accounts and login screen using Firebase Authentication</li>
+                <li>Settings page with settings stored on local storage</li>
+                <li>Azure Function App used to call ChatGPT API to not expose the API key</li>
+                <li>Breathing intervention page implementation</li>
+            </ul>
+            </p>
+            <br>
+            <p>
+                Repository: <a href="https://github.com/kaitrice/panic-pal" target="null" class="body-link">GitHub
+                    Repository</a>
+            </p>
+            <p>Work-in-progress screenshots:</p>
+            <div class="pic" style="margin-left: 15px;">
+                <img src="Panic Pal Chat.png" alt="Picture of the chat screen on Panic Pal"
+                    style="width: 28%;  height: 28%;">
+                <img src="Panic Pal Mental Hotlines.png"
+                    alt="Picture of the list of hotlines you can call from inside Panic Pal"
+                    style="width: 28%;  height: 28%;">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="contact">
+        <h1 id="#contact">Contact</h1>
+
+        <div class="content">
+            <p>
+                GitHub: <a class="body-link" href="https://github.com/daniel-koronthaly"
+                    target="null">daniel-koronthaly</a>
+                <br>
+                LinkedIn: <a class="body-link" href="https://www.linkedin.com/in/daniel-koronthaly/"
+                    target="null">daniel-koronthaly</a>
+                <br>
+                Contact: <b>daniel(at)koronthaly.net</b>
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <em>
+            <p style="text-align: center;">&copy; 2023 Daniel Koronthály</p>
+        </em>
+    </div>
+</body>
+
+</html>
